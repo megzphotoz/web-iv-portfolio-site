@@ -9,34 +9,30 @@
 </head>
 
 <body>
-<header id="cover-bg"><!--NEED TO INCLUDE MILKWEED IMG & BLUE BG FOR NAV THROUGH CSS-->
+<header id="bg-blue">
 	<div class="wrapper">
-		<nav class="smooth-scroll">
+		<nav>
 			<ul>
-				<li><a href="home.html">Home</a></li>
-				<li><a href="#">About</a></li>
+				<li><a href="#">Home</a></li>
+				<li><a href="about.html">About</a></li>
 				<li><a href="portfolio.html">Portfolio</a></li>
-				<li><a href="work.html">Works</a></li>
 				<li><a href="contact.html">Contact</a></li>
 			</ul>
 		</nav>
-		<div>
-			<h1><a href="#"><img src="img/aahkii-logo.png" alt="Aahkii Photo Design Logo"></a></h1>
-			<p>Inspiration can be found in the smallest moments</p>
-		</div>
 	</div>
 </header>
-<div class= "wrapper">
-	<section id="about">
-		<div> <a href="index.html"><img src="../img/about.jpg" alt="Self portrait with sparkler"></a> 
-			<!--NEED TO RESAVE W/ CORRECT HEIGHT/CLIPPING MASK, ASK FOR HELP, ASIDE FROM RESIZING, SOMETHING ELSE WEIRD IS GOING ON WHEN SAVED FOR WEB--> 
-		</div>
-		<header>
-			<h2>About Me</h2>
-		</header>
-		<div class="row">
+<section id="about" class= "wrapper">
+	<div> <a href="index.html"><img src="img/about.jpg" alt=""></a> </div>
+	<div class="row">
+		<div class="float-l">
+			<header>
+				<h2>About Me</h2>
+			</header>
 			<p><span>Photography</span> and <span>Design</span> are my passions. I find my inspiration through nature, family, friends, animals, and documenting life.</p>
 			<p>Follow Me Here</p>
+			<!--ISSUE SAID POTENTIALLY H2, BUT FOR STYLING, COULD IT BE AN H3?--> 
+		</div>
+		<div class="float-r">
 			<ul>
 				<!-- PLACE THROUGH CSS, WOULD IT BE OKAY TO SWITCH LINKEDIN TO INSTAGRAM SINCE I'M ACTIVE ON THERE & NOT SO MUCH ON LINKEDIN? -->
 				<li><a href="http://www.facebook.com" target="_blank"></a><span>Facebook</span></li>
@@ -44,7 +40,7 @@
 				<li><a href="http://www.linkedin.com" target="_blank"></a><span>Linkedin</span></li>
 			</ul>
 		</div>
-	</section>
-</div>
+	</div>
+</section>
 </body>
 </html>
