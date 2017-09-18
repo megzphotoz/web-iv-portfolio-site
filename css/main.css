@@ -59,28 +59,27 @@ nav a:hover {
 .float-l p, .float-r p, #bg-blue p {
 	color: #B3B3B3; /* GRAY */
 }
-#about h2, #about span {
+#about h1, #about span {
 	font-weight: 700;
 }
 /* 1.1 - Headings */
-#bg-blue h1, #bg-blue p  {
-	text-align: center;
-}
-#bg-blue h1 { /* SO FAR: MARGIN, W&H, EXCESSIVE PADDING???...SAME WITH H1 P */
-	padding: 400px 0 0 400px;
+#logo {
+	position: relative;
+	top: 100px;
+	left: 100px;
 }
 
-#about h2, #about span, #bg-blue {
+
+#about h1, #about span, #bg-blue, #about ul li a:hover {
 	color: #96D1EC; /* LIGHT BLUE */
 }
-#about h2 {
+#about h1 {
 	font-size: 36px;
 }
-
 /* 1.2 - Body Copy */
-#about h2, .float-l p {
+#about h1, .float-l p {
 	float: left;
-	padding: 0 200px 0 100px;
+	padding: 20px 167px 0 135px;
 	width: 760px;
 }
 .float-l p {
@@ -90,11 +89,10 @@ nav a:hover {
 .float-r p {
 	float: right;
 	font-size: 21px;
-	padding: 10px 200px 0 0;
+	width: 182px;
 }
 /* 1.4 - Lists */
-.float-r ul {
-	display: inline-block;
+#about ul {
 	list-style: none;
 }
 /* 2.1 - Main */
@@ -102,15 +100,21 @@ nav {
 	text-align: center;
 }
 nav li {
-	display: inline-block;
-	padding: 30px 118px 0 60px;
+	padding: 20px 110px;
 	list-style: none;
 }
 
 #bg-blue {
 	background-color: #96D1EC;
+	padding: 5px 0;
 }
-
+/* 3.1 - Site Structure */
+#about ul, .float-r p, nav li, #about ul a, #about li {
+	display: inline-block;
+}
+#about h1, .float-l p, #about ul {
+	margin: 0;
+} 
 /* 4.0 - Media */
 #bg-blue div:nth-child(2)  {
 	background: url(../img/cover.jpg) no-repeat center;
@@ -119,9 +123,10 @@ nav li {
 	-o-background-size: cover;
 	background-size: cover;
 }
-#about a {
-	padding: 50px;
+#about img {
+	padding: 100px 0 53px 130px;
 }
+
 #about ul li:first-child {
 	background: url("../img/icon-fb.jpg") no-repeat 0 0;
 }
@@ -131,18 +136,15 @@ nav li {
 #about ul li:last-child {
 	background: url("../img/icon-linkedin.jpg") no-repeat 0 0;
 }
-#about ul li {
-	width: 30px;
-	height: 30px;
-}
+
 #about ul li a:hover {
 	background-position: 0 -30 /* 0 represents our horizontal value & -25 shifts it up */
+		
 }
-#about ul li {
-	display: inline-block;
-	float: right;
+#about ul a {
 	width: 30px;
 	height: 30px;
+	margin-right: 30px;
 }
 /* 3.1 - Site Structure */
 .wrapper {
