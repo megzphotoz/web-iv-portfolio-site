@@ -35,14 +35,14 @@
 nav li {
 	font-size: 14px;
 }
-nav li, #work h2 {
+nav li, #work h2, #portfolio p, label {
 	font-weight: 400; /* Reg */
 }
 nav a, #bg-blue p {
 	text-decoration: none;
 	color: #fff;
 }
-nav a {
+nav a, form label, #contact p {
 	text-transform: uppercase;
 }
 nav a:hover {
@@ -54,7 +54,7 @@ nav a:hover {
 #bg-blue p, .float-r p {
 	font-size: 21px;
 }
-.float-l p, .float-r p, #bg-blue p, #work h2 {
+.float-l p, .float-r p, #bg-blue p, #work h2, form, textarea {
 	color: #B3B3B3; /* GRAY */
 }
 #about h1, #about span, #contact p:first-child span, #work span {
@@ -65,16 +65,18 @@ nav a:hover {
 }
 #portfolio h2 {
 	font-size: 17px;
-	font-weight: 800;
+	font-weight: 800; /* XBOLD */
 	margin-bottom: 0;
 }
 #portfolio p {
 	font-size: 17px;
-	font-weight: 400;
 	margin-top: 5px;
 }
 #work p:last-child {
 	font-weight: 300; /* LIGHT */
+}
+#about h1, label {
+	font-size: 36px;
 }
 /* 1.1 - Headings */
 #logo {
@@ -84,7 +86,7 @@ nav a:hover {
 	width: 458px;
 	height: 137px;
 }
-#about h1, .float-l p span, #bg-blue, #contact p:first-child span, #work span {
+#about h1, .float-l p span, #bg-blue, #contact p:first-child span, #work span, #contact a:hover {
 	color: #96D1EC; /* LIGHT BLUE */
 }
 #about h1 {
@@ -94,7 +96,7 @@ nav a:hover {
 #work .float-r {
 	float: right;
 	width: 585px;
-	padding-bottom: 5px;
+	margin-top: 170px;
 }
 /* 1.2 - Body Copy */
 #logo p {
@@ -105,13 +107,22 @@ nav a:hover {
 	line-height: 30px;
 	width: 437px;
 }
-.float-r {
-	float: left;
-	width: 182px;
-	margin: 10px 0 0 80px;
-}
 .float-r p {
-	padding-bottom: 20px;
+	line-height: 35px;
+}
+/* 1.3 - Buttons */
+#contact a { /* SUBMIT */
+	width: 118px;
+	height: 35px;
+	background-color: #B3B3B3;
+	color: #fff;
+	padding: 10px 20px;
+}
+#contact a, #contact a:hover {
+	text-decoration: none;
+}
+#contact p:last-child {
+	margin: 40px;
 }
 /* 1.4 - Lists */
 #about ul {
@@ -126,31 +137,36 @@ ul span, #portfolio h1, #contact h1, #work h1 {
 	display: none;
 }
 /* 1.5 - Forms */
-form, input {
-	text-align: center;
+input {
 	width: 708px;
 	display: inline-block;
 	border: none;
 	border-bottom: 1px solid;
 	color: #B3B3B3;
 }
-#contact p:first-child {
-	text-align: center;
-	padding: 138px 31px;
+#contact {
+	position: relative;
+	top: 70px;
 	width: 708px;
-	margin-left: 230px;
 }
-#contact p:last-child span {
-	text-decoration: none; /* WHY IS THIS STILL UNDERLINED?? */
-	text-transform: uppercase;
-	width: 118px;
-	height: 35px;
-	background-color: #B3B3B3;
-	color: #fff;
-	padding: 10px 20px;
+#contact p:first-child {
+	margin-bottom: 100px;
+	line-height: 40px;
+}
+label {
+	text-align: left;
+}
+input {
+	margin-bottom: 20px;
+}
+textarea {
+	width: 708px;
+	margin-top: 20px;
+}
+label:nth-child(3) {
 }
 /* 2.0 - Navigation Menus */
-nav {
+nav, #contact p:first-child, #contact p:last-child {
 	text-align: center;
 }
 nav li {
@@ -247,4 +263,12 @@ nav li {
 }
 #about ul li a:hover {
 	background-position: 0 -30px; /* 0 represents our horizontal value & -25px shifts it up */
+}
+#work .row img {
+	float: left;
+	width: 477px;
+	margin: 125px 20px 0 75px;
+}
+#work img:last-child {
+	margin: 125px 0 0 75px;
 }
